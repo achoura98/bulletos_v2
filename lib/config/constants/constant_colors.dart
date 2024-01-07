@@ -20,6 +20,10 @@ class BColors {
   static const kDarkPrimaryButtonColor = Colors.white;
   static const kSecondButtonColor = Color(0xFF757575);
 
+  static const kLightBorderColor = Color(0xFF1B5E20);
+  static const kDarkBorderColor = Colors.white;
+  static const kSecondBorderColor = Colors.grey;
+
 // onboarding colors
   static const tOnboardingScreen1Colors = Colors.white;
   static const tOnboardingScreen2Colors = Color(0xfffddcdf);

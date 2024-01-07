@@ -5,10 +5,13 @@ import 'package:bulletos_v2/src/presentation/views/sign_up/sign_up_screen.dart';
 import 'package:bulletos_v2/src/presentation/views/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 
+import 'src/presentation/views/nav_bar/nar_bar.dart';
+
 final Map<String, WidgetBuilder> routes = {
   SplashScreen.routeName: (context) => const SplashScreen(),
   OnboardingScreen.routeName: (context) => const OnboardingScreen(),
   SignUpScreen.routeName: (context) => const SignUpScreen(),
   OtpVerificationSuccess.routeName: (context) => const OtpVerificationSuccess(),
   InterestScreen.routeName: (context) => const InterestScreen(),
+  NavBarWidget.routeName: (context) => const NavBarWidget(),
 };

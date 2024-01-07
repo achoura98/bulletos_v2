@@ -1,4 +1,5 @@
 import 'package:bulletos_v2/src/presentation/views/interest/components/body.dart';
+import 'package:bulletos_v2/src/presentation/views/nav_bar/nar_bar.dart';
 import 'package:flutter/material.dart';
 
 class InterestScreen extends StatefulWidget {
@@ -19,7 +20,8 @@ class _InterestScreenState extends State<InterestScreen> {
         automaticallyImplyLeading: false,
         actions: <Widget>[
           TextButton(
-              onPressed: () {},
+              onPressed: (() =>
+                  Navigator.pushNamed(context, NavBarWidget.routeName)),
               child: Text("Passer",
                   style: Theme.of(context).textTheme.headlineSmall))
         ],
