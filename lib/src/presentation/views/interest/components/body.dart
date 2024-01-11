@@ -75,7 +75,7 @@ class _BodyState extends State<Body> {
                           choiceStyle: C2ChoiceStyle(
                               color: dark
                                   ? BColors.kPrimaryColor
-                                  : BColors.kDarkPrimaryTextColor,
+                                  : BColors.kLightPrimaryTextColor,
                               borderRadius:
                                   const BorderRadius.all(Radius.circular(5))),
                           wrapped: true,

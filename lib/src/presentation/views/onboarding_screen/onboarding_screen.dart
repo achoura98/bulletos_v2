@@ -67,7 +67,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     ],
                   ),
                   Positioned(
-                      bottom: 80.h,
+                      bottom: 140.h,
                       child: DotsIndicator(
                         position: state.page,
                         dotsCount: 3,
@@ -109,7 +109,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 30.w),
           child: SizedBox(
-            height: 125.h,
+            //height: 120.h,
             child: Column(
               children: [
                 Text(
@@ -133,6 +133,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             ),
           ),
         ),
+        const Spacer(),
         InkWell(
           onTap: () {
             if (index < 3) {
@@ -149,7 +150,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             }
           },
           child: Container(
-            margin: EdgeInsets.only(top: 60.h, left: 25.w, right: 25.w),
+            margin: EdgeInsets.only(left: 25.w, right: 25.w, bottom: 50.h),
             width: 328.w,
             height: 50.h,
             decoration: BoxDecoration(

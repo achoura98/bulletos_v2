@@ -75,4 +75,8 @@ class BTexts {
 // billing detail text
   static const String tBillingDetailText =
       "Réservez rapidement car les places se remplissent rapidement";
+
+  //home appbar
+  static const String homeAppBarTitle = 'Bienvenue Jaken';
+  static const String homeAppBarTitle2 = 'Sokode';
 }
