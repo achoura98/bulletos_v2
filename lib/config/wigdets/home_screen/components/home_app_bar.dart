@@ -1,11 +1,11 @@
-import 'package:bulletos_v2/src/presentation/views/home_screen/components/app_bar_widget.dart';
+import 'package:bulletos_v2/config/wigdets/home_screen/components/cart_couter_icon.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
-import '../../../../../config/constants/constant_colors.dart';
-import '../../../../../config/constants/constant_sizes.dart';
-import '../../../../../config/constants/text_string.dart';
-import '../../../../../config/wigdets/cart_couter_icon.dart';
+import '../../../../src/presentation/views/home_screen/components/app_bar_widget.dart';
+import '../../../constants/constant_colors.dart';
+import '../../../constants/constant_sizes.dart';
+import '../../../constants/text_string.dart';
 
 class BHomeAppBar extends StatelessWidget {
   const BHomeAppBar({

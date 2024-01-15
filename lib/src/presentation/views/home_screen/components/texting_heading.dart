@@ -20,10 +20,8 @@ class BTextingHeading extends StatelessWidget {
     return Row(
       children: [
         Text(title,
-            style: Theme.of(context)
-                .textTheme
-                .headlineSmall!
-                .apply(color: textColor),
+            style:
+                Theme.of(context).textTheme.titleLarge!.apply(color: textColor),
             maxLines: 1,
             overflow: TextOverflow.ellipsis),
         if (showActionButton)

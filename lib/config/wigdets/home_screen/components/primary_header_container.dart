@@ -1,8 +1,8 @@
+import 'package:bulletos_v2/config/wigdets/circular_container.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../config/constants/constant_colors.dart';
-import '../../../../../config/wigdets/circular_container.dart';
-import '../../../../../config/wigdets/curved_edge_widget.dart';
+import '../../../constants/constant_colors.dart';
+import '../../curved_edge_widget.dart';
 
 class BPrimaryHeaderContainer extends StatelessWidget {
   const BPrimaryHeaderContainer({

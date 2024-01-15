@@ -19,15 +19,15 @@ class BTextTheme {
         fontWeight: FontWeight.w600,
         color: BColors.kPrimaryColor),
     titleLarge: const TextStyle().copyWith(
-        fontSize: 16.0,
+        fontSize: 18.0,
         fontWeight: FontWeight.w600,
         color: BColors.kPrimaryLightColor),
     titleMedium: const TextStyle().copyWith(
-        fontSize: 16.0,
+        fontSize: 18.0,
         fontWeight: FontWeight.w500,
         color: BColors.kPrimaryLightColor),
     titleSmall: const TextStyle().copyWith(
-        fontSize: 16.0,
+        fontSize: 18.0,
         fontWeight: FontWeight.w400,
         color: BColors.kLightPrimaryTextColor),
     bodyLarge: const TextStyle().copyWith(
