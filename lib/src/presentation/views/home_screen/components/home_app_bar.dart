@@ -5,7 +5,7 @@ import 'package:iconsax/iconsax.dart';
 import '../../../../../config/constants/constant_colors.dart';
 import '../../../../../config/constants/constant_sizes.dart';
 import '../../../../../config/constants/text_string.dart';
-import '../../../../../config/wigdets/cart_couter_icon.dart';
+import '../../../../../config/wigdets/icon/cart_couter_icon.dart';
 
 class BHomeAppBar extends StatelessWidget {
   const BHomeAppBar({
@@ -35,7 +35,7 @@ class BHomeAppBar extends StatelessWidget {
               Row(
                 children: [
                   const Icon(
-                    Iconsax.map_1,
+                    Iconsax.location4,
                     color: BColors.white,
                   ),
                   SizedBox(width: BSizes.spaceBtwItems),

@@ -48,12 +48,14 @@ class _OtpScreenState extends State<OtpScreen> {
                   length: 6,
                   width: MediaQuery.of(context).size.width,
                   fieldWidth: 50.0,
-                  style: const TextStyle(
-                      fontSize: 20.0, color: BColors.kPrimaryColor),
+                  style: TextStyle(
+                      fontSize: 20.0,
+                      color: dark ? BColors.white : BColors.kPrimaryColor),
                   textFieldAlignment: MainAxisAlignment.spaceAround,
                   fieldStyle: FieldStyle.box,
                   otpFieldStyle: OtpFieldStyle(
-                      focusBorderColor: BColors.kPrimaryColor,
+                      focusBorderColor:
+                          dark ? BColors.white : BColors.kPrimaryColor,
                       borderColor: BColors.kPrimaryColor),
                   onCompleted: (pin) {
                     // Handle completed OTP input

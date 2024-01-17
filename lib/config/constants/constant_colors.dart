@@ -35,9 +35,14 @@ class BColors {
   static const white = Colors.white;
   static const black = Colors.black;
   static const grey = Colors.grey;
+  static const transparent = Colors.transparent;
 
 // onboarding colors
   static const tOnboardingScreen1Colors = Colors.white;
   static const tOnboardingScreen2Colors = Color(0xfffddcdf);
   static const Color tOnboardingScreen3Colors = Color(0xffffdcbd);
+
+  //Border color
+  static const Color borderPrimary = Color(0xFFD9D9D9);
+  static const Color borderSecondary = Color(0xFFE6E6E6);
 }

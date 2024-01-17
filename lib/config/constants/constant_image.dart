@@ -31,4 +31,14 @@ class BImages {
       'assets/images/categorie/icons8-école-48.png';
   static const String natureIcon =
       'assets/images/categorie/icons8-jungle-48.png';
+
+  // Event image
+  static const String eventImage1 = 'assets/images/event/business.jpg';
+  static const String eventImage2 = 'assets/images/event/education.jpg';
+  static const String eventImage3 = 'assets/images/event/religion.jpg';
+  static const String eventImage4 = 'assets/images/event/science.jpg';
+  static const String eventImage5 = 'assets/images/event/sport.jpg';
+  static const String eventImage6 = 'assets/images/event/technology.jpg';
+  static const String eventImage7 = 'assets/images/event/cuisine.jpg';
+  static const String eventImage8 = 'assets/images/event/music.jpg';
 }

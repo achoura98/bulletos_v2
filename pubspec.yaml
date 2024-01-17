@@ -89,6 +89,7 @@ flutter:
     - assets/images/onbording_image/
     - assets/images/verified/
     - assets/images/profil/
+    - assets/images/event/
     - assets/images/categorie/
     - assets/logo/
     - assets/fonts/Poppins/

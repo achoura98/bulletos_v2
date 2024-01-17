@@ -1,6 +1,7 @@
 import 'package:bulletos_v2/models/events/onboading_model.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+//import '../../../../../helper/helper_function.dart';
 
 class OnboardingPageWidget extends StatelessWidget {
   const OnboardingPageWidget({
@@ -13,6 +14,7 @@ class OnboardingPageWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
+    //final dark = BHelperFunctions.isDarkMode(context);
 
     return Container(
       padding: const EdgeInsets.all(30),
@@ -29,18 +31,14 @@ class OnboardingPageWidget extends StatelessWidget {
               Text(
                 model.title,
                 textAlign: TextAlign.center,
-                style: GoogleFonts.poppins(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20,
-                    color: Colors.black),
+                style: Theme.of(context).textTheme.headlineMedium,
               ),
-              Text(model.subtitle,
-                  textAlign: TextAlign.center,
-                  maxLines: 4,
-                  style: GoogleFonts.poppins(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 15,
-                      color: Colors.blueGrey[700])),
+              Text(
+                model.subtitle,
+                textAlign: TextAlign.center,
+                maxLines: 4,
+                style: Theme.of(context).textTheme.bodyLarge,
+              ),
             ],
           ),
           Text(model.counterText,

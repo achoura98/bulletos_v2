@@ -1,5 +1,6 @@
 import 'package:bulletos_v2/config/constants/constant_colors.dart';
 import 'package:bulletos_v2/config/constants/constant_image.dart';
+import 'package:bulletos_v2/config/constants/constant_sizes.dart';
 import 'package:bulletos_v2/config/constants/text_string.dart';
 import 'package:bulletos_v2/src/presentation/bloc/onboarding_bloc/onboarding_bloc.dart';
 import 'package:bulletos_v2/src/presentation/bloc/onboarding_bloc/onboarding_event.dart';
@@ -115,19 +116,13 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 Text(
                   title,
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: BColors.kLightPrimaryTextColor,
-                    fontSize: 24.sp,
-                    fontWeight: FontWeight.normal,
-                  ),
+                  style: Theme.of(context).textTheme.headlineLarge,
                 ),
+                SizedBox(height: BSizes.defaultSpace),
                 Text(
                   subTitle,
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                      color: BColors.kLightPrimaryTextColor,
-                      fontSize: 14.sp,
-                      fontWeight: FontWeight.normal),
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ],
             ),
