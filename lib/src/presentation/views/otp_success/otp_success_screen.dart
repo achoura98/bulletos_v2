@@ -25,10 +25,12 @@ class OtpVerificationSuccess extends StatelessWidget {
               SizedBox(height: 20.h),
               Text(
                 BTexts.BSuccesstext1,
-                style: Theme.of(context).textTheme.headlineLarge,
+                style: Theme.of(context).textTheme.titleLarge,
               ),
               SizedBox(height: 20.h),
-              Text(BTexts.BSuccesstext2,
+              Text(
+                  textAlign: TextAlign.center,
+                  BTexts.BSuccesstext2,
                   style: Theme.of(context).textTheme.headlineSmall),
               const Spacer(),
               Padding(
@@ -47,7 +49,7 @@ class OtpVerificationSuccess extends StatelessWidget {
                         style: const TextStyle().copyWith(
                             fontSize: 24.0,
                             fontWeight: FontWeight.w600,
-                            color: BColors.kDarkPrimaryTextColor)),
+                            color: BColors.kdarkTextColors)),
                   ),
                 ),
               ),

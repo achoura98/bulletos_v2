@@ -27,7 +27,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
 
   final screens = [
     const HomeScreen(),
-    const WishListScreen(),
+    const FavoriteScreen(),
     const AddEventScreen(),
     const TicketScreen(),
     const ProfilScreen()
@@ -56,8 +56,9 @@ class _NavBarWidgetState extends State<NavBarWidget> {
             child: GNav(
               tabActiveBorder: Border.all(
                 width: 3,
-                color:
-                    dark ? BColors.kDarkBorderColor : BColors.kLightBorderColor,
+                color: dark
+                    ? BColors.kdarkBorderColors
+                    : BColors.kLightBorderColor,
               ),
               backgroundColor: dark
                   ? BColors.kdarkBackgroungColors

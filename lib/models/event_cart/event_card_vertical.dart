@@ -19,54 +19,57 @@ class BEventCardVertical extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final dark = BHelperFunctions.isDarkMode(context);
-    return Container(
-      padding: const EdgeInsets.all(1),
-      width: 300,
-      decoration: BoxDecoration(
-          boxShadow: [BShadowStyle.verticalEventShadow],
-          borderRadius: BorderRadius.circular(BSizes.productImageRadius),
-          color: dark ? BColors.grey.shade900 : BColors.transparent),
-      child: Column(
-        children: [
-          /// Thumbnail, Wishlist button,
-          BRoundedContainer(
-            //height: 280,
-            //padding: EdgeInsets.all(BSizes.sm),
-            backgroundColor: dark ? BColors.dark : BColors.light,
-            child: Stack(
-              children: [
-                const BRoundedImage(
-                  width: 300,
-                  imageUrl: BImages.eventImage1,
-                  applyImageRadius: true,
-                ),
-
-                // Favorite Icon Button
-                Positioned(
-                  top: 0,
-                  right: 0,
-                  child: BCircularIcon(
-                    dark: dark,
-                    icon: Iconsax.heart5,
-                    color: Colors.red,
+    return GestureDetector(
+      onTap: () {},
+      child: Container(
+        padding: const EdgeInsets.all(1),
+        width: 300,
+        decoration: BoxDecoration(
+            boxShadow: [BShadowStyle.verticalEventShadow],
+            borderRadius: BorderRadius.circular(BSizes.productImageRadius),
+            color: dark ? BColors.grey.shade900 : BColors.transparent),
+        child: Column(
+          children: [
+            /// Thumbnail, Wishlist button,
+            BRoundedContainer(
+              //height: 280,
+              //padding: EdgeInsets.all(BSizes.sm),
+              backgroundColor: dark ? BColors.dark : BColors.light,
+              child: Stack(
+                children: [
+                  const BRoundedImage(
+                    width: 300,
+                    imageUrl: BImages.eventImage1,
+                    applyImageRadius: true,
                   ),
-                )
-              ],
-            ),
-          ),
 
-          /// Details
-          Padding(
-            padding: const EdgeInsets.all(15.0),
-            child: Column(
-              children: [
-                BDescripHeader(dark: dark),
-                const BDateWidget(),
-                BLocationWidget(dark: dark)
-              ],
+                  // Favorite Icon Button
+                  Positioned(
+                    top: 0,
+                    right: 0,
+                    child: BCircularIcon(
+                      dark: dark,
+                      icon: Iconsax.heart5,
+                      color: Colors.red,
+                    ),
+                  )
+                ],
+              ),
             ),
-          )
-        ],
+
+            /// Details
+            Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Column(
+                children: [
+                  BDescripHeader(dark: dark),
+                  const BDateWidget(),
+                  BLocationWidget(dark: dark)
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

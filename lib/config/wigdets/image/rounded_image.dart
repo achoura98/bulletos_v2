@@ -14,7 +14,11 @@ class BRoundedImage extends StatelessWidget {
     this.padding,
     this.isNetworkImage = false,
     this.onPressed,
-    this.borderRadius = 16.0,
+    //this.borderRadius = 16.0,
+    this.topLeftRadius = 16,
+    this.bottomLeftRadius = 16,
+    this.topRightRadius = 16,
+    this.bottomRightRadius = 16,
   });
 
   final double? width, height;
@@ -26,7 +30,11 @@ class BRoundedImage extends StatelessWidget {
   final EdgeInsetsGeometry? padding;
   final bool isNetworkImage;
   final VoidCallback? onPressed;
-  final double borderRadius;
+  //final double borderRadius;
+  final double topLeftRadius;
+  final double topRightRadius;
+  final double bottomLeftRadius;
+  final double bottomRightRadius;
 
   @override
   Widget build(BuildContext context) {
@@ -40,13 +48,19 @@ class BRoundedImage extends StatelessWidget {
             //border: border,
             //color: backgroundColor,
             borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(borderRadius),
-                topRight: Radius.circular(borderRadius))),
+          topLeft: Radius.circular(topLeftRadius),
+          topRight: Radius.circular(topRightRadius),
+          bottomLeft: Radius.circular(bottomLeftRadius),
+          bottomRight: Radius.circular(bottomRightRadius),
+        )),
         child: ClipRRect(
           borderRadius: applyImageRadius
               ? BorderRadius.only(
-                  topLeft: Radius.circular(borderRadius),
-                  topRight: Radius.circular(borderRadius))
+                  topLeft: Radius.circular(topLeftRadius),
+                  topRight: Radius.circular(topRightRadius),
+                  bottomLeft: Radius.circular(bottomLeftRadius),
+                  bottomRight: Radius.circular(bottomRightRadius),
+                )
               : BorderRadius.zero,
           child: Image(
             fit: fit,

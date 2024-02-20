@@ -24,8 +24,14 @@ class BTextingHeading extends StatelessWidget {
                 Theme.of(context).textTheme.titleLarge!.apply(color: textColor),
             maxLines: 1,
             overflow: TextOverflow.ellipsis),
+        const Spacer(),
         if (showActionButton)
-          TextButton(onPressed: () {}, child: Text(buttonTitle))
+          TextButton(
+              onPressed: () {},
+              child: Text(
+                buttonTitle,
+                style: Theme.of(context).textTheme.bodyMedium,
+              ))
       ],
     );
   }

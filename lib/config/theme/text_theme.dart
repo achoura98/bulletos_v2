@@ -22,35 +22,35 @@ class BTextTheme {
     titleLarge: GoogleFonts.poppins(
         fontSize: 18.0,
         fontWeight: FontWeight.w600,
-        color: BColors.kPrimaryLightColor),
+        color: BColors.kLightTextColor),
     titleMedium: GoogleFonts.poppins(
         fontSize: 18.0,
         fontWeight: FontWeight.w500,
-        color: BColors.kPrimaryLightColor),
+        color: BColors.kLightTextColor),
     titleSmall: GoogleFonts.poppins(
         fontSize: 18.0,
         fontWeight: FontWeight.w400,
-        color: BColors.kLightPrimaryTextColor),
+        color: BColors.kLightTextColor),
     bodyLarge: GoogleFonts.poppins(
         fontSize: 14.0,
         fontWeight: FontWeight.w500,
-        color: BColors.kLightPrimaryTextColor),
+        color: BColors.kLightTextColor),
     bodyMedium: GoogleFonts.poppins(
         fontSize: 14.0,
         fontWeight: FontWeight.normal,
-        color: BColors.kLightPrimaryTextColor),
+        color: BColors.kLightTextColor),
     bodySmall: GoogleFonts.poppins(
         fontSize: 14.0,
         fontWeight: FontWeight.w500,
-        color: BColors.kLightPrimaryTextColor.withOpacity(0.5)),
+        color: BColors.kLightTextColor.withOpacity(0.5)),
     labelLarge: GoogleFonts.poppins(
         fontSize: 12.0,
         fontWeight: FontWeight.normal,
-        color: BColors.kLightPrimaryTextColor),
+        color: BColors.kLightTextColor),
     labelMedium: GoogleFonts.poppins(
         fontSize: 12.0,
         fontWeight: FontWeight.normal,
-        color: BColors.kLightPrimaryTextColor.withOpacity(0.5)),
+        color: BColors.kLightTextColor.withOpacity(0.5)),
   );
 
   //customizable Dark Text Theme
@@ -58,46 +58,46 @@ class BTextTheme {
     headlineLarge: GoogleFonts.poppins(
         fontSize: 32.0,
         fontWeight: FontWeight.bold,
-        color: BColors.kDarkPrimaryTextColor),
+        color: BColors.kdarkTextColors),
     headlineMedium: GoogleFonts.poppins(
         fontSize: 24.0,
         fontWeight: FontWeight.w600,
-        color: BColors.kDarkPrimaryTextColor),
+        color: BColors.kdarkTextColors),
     headlineSmall: GoogleFonts.poppins(
         fontSize: 18.0,
         fontWeight: FontWeight.w600,
-        color: BColors.kDarkPrimaryTextColor),
+        color: BColors.kdarkTextColors),
     titleLarge: GoogleFonts.poppins(
         fontSize: 16.0,
         fontWeight: FontWeight.w600,
-        color: BColors.kDarkPrimaryTextColor),
+        color: BColors.kdarkTextColors),
     titleMedium: GoogleFonts.poppins(
         fontSize: 16.0,
         fontWeight: FontWeight.w500,
-        color: BColors.kDarkPrimaryTextColor),
+        color: BColors.kdarkTextColors),
     titleSmall: GoogleFonts.poppins(
         fontSize: 16.0,
         fontWeight: FontWeight.w400,
-        color: BColors.kDarkPrimaryTextColor),
+        color: BColors.kdarkTextColors),
     bodyLarge: GoogleFonts.poppins(
         fontSize: 14.0,
         fontWeight: FontWeight.w500,
-        color: BColors.kDarkPrimaryTextColor),
+        color: BColors.kdarkTextColors),
     bodyMedium: GoogleFonts.poppins(
         fontSize: 14.0,
         fontWeight: FontWeight.normal,
-        color: BColors.kDarkPrimaryTextColor),
+        color: BColors.kdarkTextColors),
     bodySmall: GoogleFonts.poppins(
         fontSize: 14.0,
         fontWeight: FontWeight.w500,
-        color: BColors.kDarkPrimaryTextColor.withOpacity(0.5)),
+        color: BColors.kdarkTextColors.withOpacity(0.5)),
     labelLarge: GoogleFonts.poppins(
         fontSize: 12.0,
         fontWeight: FontWeight.normal,
-        color: BColors.kDarkPrimaryTextColor),
+        color: BColors.kdarkTextColors),
     labelMedium: GoogleFonts.poppins(
         fontSize: 12.0,
         fontWeight: FontWeight.normal,
-        color: BColors.kDarkPrimaryTextColor.withOpacity(0.5)),
+        color: BColors.kdarkTextColors.withOpacity(0.5)),
   );
 }

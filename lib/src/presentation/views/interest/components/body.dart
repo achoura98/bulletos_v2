@@ -1,4 +1,5 @@
 import 'package:bulletos_v2/config/constants/constant_colors.dart';
+import 'package:bulletos_v2/config/constants/constant_sizes.dart';
 import 'package:chips_choice/chips_choice.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -50,9 +51,12 @@ class _BodyState extends State<Body> {
                   Text(BTexts.BInterestText1,
                       textAlign: TextAlign.center,
                       style: Theme.of(context).textTheme.headlineMedium),
-                  Text(BTexts.BInterestText2,
-                      textAlign: TextAlign.center,
-                      style: Theme.of(context).textTheme.titleSmall),
+                  Padding(
+                    padding: EdgeInsets.all(BSizes.sm),
+                    child: Text(BTexts.BInterestText2,
+                        textAlign: TextAlign.center,
+                        style: Theme.of(context).textTheme.titleSmall),
+                  ),
                   SizedBox(height: 25.h),
                   Padding(
                     padding: EdgeInsets.all(10.sp),
@@ -67,7 +71,7 @@ class _BodyState extends State<Body> {
                               label: (i, v) => v),
                           choiceActiveStyle: C2ChoiceStyle(
                               color: dark
-                                  ? BColors.kDarkPrimaryTextColor
+                                  ? BColors.kdarkTextColors
                                   : BColors.kPrimaryColor,
                               borderColor: BColors.kPrimaryColor,
                               borderRadius:
@@ -75,7 +79,7 @@ class _BodyState extends State<Body> {
                           choiceStyle: C2ChoiceStyle(
                               color: dark
                                   ? BColors.kPrimaryColor
-                                  : BColors.kLightPrimaryTextColor,
+                                  : BColors.kLightTextColor,
                               borderRadius:
                                   const BorderRadius.all(Radius.circular(5))),
                           wrapped: true,

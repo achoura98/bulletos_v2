@@ -84,7 +84,7 @@ class _OtpScreenState extends State<OtpScreen> {
                               builder: (c) => const OtpVerificationSuccess()));
                         },
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: BColors.kLightPrimaryButtonColor,
+                          backgroundColor: BColors.kLightButtonColor,
                           side: BorderSide.none,
                         ),
                         child: Text(
@@ -92,7 +92,7 @@ class _OtpScreenState extends State<OtpScreen> {
                           style: const TextStyle().copyWith(
                               fontSize: 24.0,
                               fontWeight: FontWeight.w600,
-                              color: BColors.kDarkPrimaryTextColor),
+                              color: BColors.kdarkTextColors),
                         ),
                       )),
                 ),

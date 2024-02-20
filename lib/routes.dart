@@ -1,3 +1,4 @@
+import 'package:bulletos_v2/src/presentation/views/favoris/wishlist.dart';
 import 'package:bulletos_v2/src/presentation/views/interest/interest_screen.dart';
 import 'package:bulletos_v2/src/presentation/views/onboarding_screen/onboarding_screen.dart';
 import 'package:bulletos_v2/src/presentation/views/otp_success/otp_success_screen.dart';
@@ -14,4 +15,5 @@ final Map<String, WidgetBuilder> routes = {
   OtpVerificationSuccess.routeName: (context) => const OtpVerificationSuccess(),
   InterestScreen.routeName: (context) => const InterestScreen(),
   NavBarWidget.routeName: (context) => const NavBarWidget(),
+  FavoriteScreen.routeName: (context) => const FavoriteScreen()
 };

@@ -44,8 +44,11 @@ class _BodyState extends State<Body> {
                       "BULLETOS",
                       style: Theme.of(context).textTheme.headlineLarge,
                     ),
-                    Text("Bienvenue sur Bulletos, Let's go!",
-                        style: Theme.of(context).textTheme.headlineMedium),
+                    Text(
+                      "Bienvenue sur Bulletos, Let's go!",
+                      style: Theme.of(context).textTheme.headlineMedium,
+                      textAlign: TextAlign.center,
+                    ),
                     const SizedBox(
                       height: 60.0,
                     ),
@@ -59,10 +62,8 @@ class _BodyState extends State<Body> {
               const SizedBox(
                 height: 30.0,
               ),
-              SpinKitCubeGrid(
-                color: dark
-                    ? BColors.kDarkPrimaryTextColor
-                    : BColors.kPrimaryColor,
+              SpinKitCircle(
+                color: dark ? BColors.kdarkTextColors : BColors.kPrimaryColor,
               ),
               const SizedBox(
                 height: 90.0,
