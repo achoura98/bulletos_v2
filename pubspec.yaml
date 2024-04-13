@@ -59,10 +59,17 @@ dependencies:
   chips_choice: ^2.0.1
   google_nav_bar: ^5.0.6
   curved_navigation_bar: ^1.0.3
+  flutter_launcher_icons: "^0.13.1"
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo/light_boleto_logo.png"
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

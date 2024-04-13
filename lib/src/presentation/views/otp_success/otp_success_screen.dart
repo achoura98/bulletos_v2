@@ -33,29 +33,47 @@ class OtpVerificationSuccess extends StatelessWidget {
                   BTexts.BSuccesstext2,
                   style: Theme.of(context).textTheme.headlineSmall),
               const Spacer(),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 50),
-                child: SizedBox(
-                  width: double.infinity,
-                  height: 60,
-                  child: ElevatedButton(
-                    onPressed: (() =>
-                        Navigator.pushNamed(context, InterestScreen.routeName)),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: BColors.kPrimaryColor,
-                      side: BorderSide.none,
-                    ),
-                    child: Text("Acceuil".toUpperCase(),
-                        style: const TextStyle().copyWith(
-                            fontSize: 24.0,
-                            fontWeight: FontWeight.w600,
-                            color: BColors.kdarkTextColors)),
-                  ),
-                ),
+              CustomButton(
+                color: BColors.kPrimaryColor,
+                text: 'Acceuil',
               ),
               const Spacer()
             ],
           ),
+        ),
+      ),
+    );
+  }
+}
+
+class CustomButton extends StatelessWidget {
+  const CustomButton({
+    super.key,
+    required this.text,
+    required this.color,
+  });
+  final String text;
+  final Color color;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 30),
+      child: SizedBox(
+        width: double.infinity,
+        height: 60,
+        child: ElevatedButton(
+          onPressed: (() =>
+              Navigator.pushNamed(context, InterestScreen.routeName)),
+          style: ElevatedButton.styleFrom(
+            backgroundColor: color,
+            side: BorderSide.none,
+          ),
+          child: Text(text.toUpperCase(),
+              style: const TextStyle().copyWith(
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.w600,
+                  color: BColors.kdarkTextColors)),
         ),
       ),
     );

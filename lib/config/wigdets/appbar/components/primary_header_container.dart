@@ -17,7 +17,6 @@ class BPrimaryHeaderContainer extends StatelessWidget {
       child: Container(
         color: BColors.kPrimaryColor,
         padding: const EdgeInsets.only(bottom: 0),
-        height: 400,
         child: Stack(
           children: [
             Positioned(

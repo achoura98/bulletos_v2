@@ -22,7 +22,7 @@ class BDescripHeader extends StatelessWidget {
         ),
         const Spacer(),
         BRoundedContainer(
-          radius: BSizes.cardRadiusSm,
+          radius: BSizes.borderRadiusMd,
           backgroundColor: dark ? BColors.dark : BColors.grey,
           height: 30,
           //width: 60,

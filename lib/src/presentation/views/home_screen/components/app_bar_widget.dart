@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
+import '../../../../../config/constants/constant_colors.dart';
+
 class BAppBar extends StatelessWidget implements PreferredSizeWidget {
   const BAppBar(
       {super.key,
@@ -11,10 +13,12 @@ class BAppBar extends StatelessWidget implements PreferredSizeWidget {
       this.showBackArrow = false,
       this.leadingIcon,
       this.actions,
-      this.leadingOnPressed});
+      this.leadingOnPressed,
+      this.centerTitle = false});
 
   final Widget? title;
   final bool showBackArrow;
+  final bool centerTitle;
   final IconData? leadingIcon;
   final List<Widget>? actions;
   final VoidCallback? leadingOnPressed;
@@ -27,6 +31,7 @@ class BAppBar extends StatelessWidget implements PreferredSizeWidget {
         automaticallyImplyLeading: false,
         leading: showBackArrow
             ? IconButton(
+                color: BColors.kPrimaryColor,
                 onPressed: () => Get.back(),
                 icon: const Icon(Iconsax.arrow_left))
             : leadingIcon != null

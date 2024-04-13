@@ -41,4 +41,7 @@ class BImages {
   static const String eventImage6 = 'assets/images/event/technology.jpg';
   static const String eventImage7 = 'assets/images/event/cuisine.jpg';
   static const String eventImage8 = 'assets/images/event/music.jpg';
+
+  //profil image
+  static const String userImage = "assets/images/profil/profil2.jpg";
 }
